@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="login-form">
+      <h1 class="text-center">Attendance Monitoring System</h1>
+      <form id="loginForm">
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Username"
+            id="username"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Password"
+            id="password"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <select class="form-control" id="userType">
+            <option value="admin">Admin</option>
+            <option value="staff">Staff</option>
+            <option value="parent">Parent</option>
+            <option value="student">Student</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Login</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
